@@ -31,21 +31,27 @@ for(let i=1; i<=100; i++) {
 for(let i=1; i<=100; i++) {
     //creare nuovo elemento
     let newelement = document.createElement('div');
-    //cosa contiene l'elemento?
-    newelement.append('FIZZYBUZZY');
+    
 
             //BONUS 2
 
             //aggiungo classe all'elemento
-            if(i%3==0 && i%5==0)
+            if(i%3==0 && i%5==0){
                 newelement.classList.add("fizzbuzz","rounded");
-            else if(i%3==0)
+                //cosa contiene l'elemento?
+                newelement.append('FizzBuzz');
+            }
+            else if(i%3==0){
                 newelement.classList.add("fizz","rounded");
-            else if(i%5==0)
+                //cosa contiene l'elemento?
+                newelement.append('Fizz');
+            }
+            else if(i%5==0){
                 newelement.classList.add("buzz","rounded");
+                //cosa contiene l'elemento?
+                newelement.append('Buzz');
+            }
 
-    
-   
     //inserisco l'elemento
     containerHTMLElement.append(newelement);
 }
