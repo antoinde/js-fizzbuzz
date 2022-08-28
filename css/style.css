@@ -9,5 +9,5 @@ h1, h2{
 .container{
     background-color: bisque;
     height: 80vh;
-
+    display: flex;
 }
