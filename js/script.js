@@ -22,3 +22,22 @@ for(i=1; i<=100; i++) {
         console.log(`${i}`);
 
 }
+
+// BONUS 1  
+for(i=1; i<=100; i++) {
+    //creare nuovo elemento
+    let newelement = document.createElement('span');
+    //cosa contiene l'elemento?
+    newelement.append('FIZZYBUZZY');
+    //aggiungo classe all'elemento
+    if(i%3==0 && i%5==0)
+        newelement.classList.add("fizzbuzz");
+    else if(i%3==0)
+        newelement.classList.add("fizz");
+    else if(i%5==0)
+        newelement.classList.add("buzz");
+    //punto il luogo dove inserire il nuovo elemento:    document.getElementById("container")
+    let location = document.getElementById("container");
+    //inserisco l'elemento
+    location.append(newelement);
+}

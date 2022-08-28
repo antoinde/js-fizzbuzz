@@ -6,8 +6,23 @@ h1, h2{
     text-align: center;
 
 }
-.container{
+#container{
     background-color: bisque;
     height: 80vh;
     display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.fizz{
+    background-color:darkolivegreen;
+}
+.buzz {
+    background-color: tomato;
+}
+.fizzbuzz {
+    background-color: brown;
+}
+.rounded{
+    border-radius: 50%;
 }
