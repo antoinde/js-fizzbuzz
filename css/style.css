@@ -25,4 +25,5 @@ h1, h2{
 }
 .rounded{
     border-radius: 50%;
+    border: 2px solid black;
 }

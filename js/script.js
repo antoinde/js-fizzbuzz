@@ -3,7 +3,7 @@ console.log("Javascript works correctly! Have fun! =)");
 console.log("----------------------------------------");
 
 //creazione numeri da 1 a 100
-for(i=1; i<=100; i++) {
+for(let i=1; i<=100; i++) {
 
     //stampa FizzBuzz al posto del numero per i multipli sia di 3 che di 5
     if(i%3==0 && i%5==0)
@@ -24,20 +24,29 @@ for(i=1; i<=100; i++) {
 }
 
 // BONUS 1  
-for(i=1; i<=100; i++) {
+
+ //punto il luogo dove inserire il nuovo elemento
+ let containerHTMLElement = document.getElementById("container");
+
+for(let i=1; i<=100; i++) {
     //creare nuovo elemento
-    let newelement = document.createElement('span');
+    let newelement = document.createElement('div');
     //cosa contiene l'elemento?
     newelement.append('FIZZYBUZZY');
-    //aggiungo classe all'elemento
-    if(i%3==0 && i%5==0)
-        newelement.classList.add("fizzbuzz");
-    else if(i%3==0)
-        newelement.classList.add("fizz");
-    else if(i%5==0)
-        newelement.classList.add("buzz");
-    //punto il luogo dove inserire il nuovo elemento:    document.getElementById("container")
-    let location = document.getElementById("container");
+
+            //BONUS 2
+
+            //aggiungo classe all'elemento
+            if(i%3==0 && i%5==0)
+                newelement.classList.add("fizzbuzz","rounded");
+            else if(i%3==0)
+                newelement.classList.add("fizz","rounded");
+            else if(i%5==0)
+                newelement.classList.add("buzz","rounded");
+
+    
+   
     //inserisco l'elemento
-    location.append(newelement);
+    containerHTMLElement.append(newelement);
 }
+
