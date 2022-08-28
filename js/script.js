@@ -51,6 +51,9 @@ for(let i=1; i<=100; i++) {
                 //cosa contiene l'elemento?
                 newelement.append('Buzz');
             }
+            else 
+                newelement.append(`${i}`);
+
 
     //inserisco l'elemento
     containerHTMLElement.append(newelement);
