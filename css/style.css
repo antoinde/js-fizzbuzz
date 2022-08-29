@@ -35,8 +35,8 @@ h1, h2{
     line-height: 100px;
     font-weight: 900;
     font-size: larger;
-    width: 100px;
-    height: 100px;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
     border: 2px solid black;
 }
