@@ -7,12 +7,14 @@ h1, h2{
 
 }
 #container{
-    background-color: bisque;
-    height: 80vh;
+    background-color:burlywood;
+    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     column-gap: 10px;
     row-gap: 10px;
+    border-radius: 10px;
+    border: 10px solid white;
 }
 .fizz{
     background-color:darkolivegreen;
@@ -23,7 +25,18 @@ h1, h2{
 .fizzbuzz {
     background-color: brown;
 }
+
+.default-color{
+    background-color:darkslategrey;
+    color: #fff;
+}
 .rounded{
+    text-align: center;
+    line-height: 100px;
+    font-weight: 900;
+    font-size: larger;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 2px solid black;
 }

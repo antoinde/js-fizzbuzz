@@ -26,7 +26,7 @@ for(let i=1; i<=100; i++) {
 // BONUS 1  
 
  //punto il luogo dove inserire il nuovo elemento
- let containerHTMLElement = document.getElementById("container");
+ let containerHTMLElement = document.getElementById('container');
 
 for(let i=1; i<=100; i++) {
     //creare nuovo elemento
@@ -51,9 +51,10 @@ for(let i=1; i<=100; i++) {
                 //cosa contiene l'elemento?
                 newelement.append('Buzz');
             }
-            else 
+            else {
+                newelement.classList.add("rounded", "default-color");
                 newelement.append(`${i}`);
-
+            }
 
     //inserisco l'elemento
     containerHTMLElement.append(newelement);
